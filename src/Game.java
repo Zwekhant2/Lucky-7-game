@@ -30,7 +30,12 @@ public class Game {
 	  }else {
 		System.out.println("You lost.");
 	  }
-		
+		System.out.println("Current balance: " + money + "$");
+		if (money <= 0) {
+			System.out.println("Game over. You're out of money.");
+			break;
+		}
+		System.out.print("Do you want to play again? (yes/no): ");
   }
 	public static int getRandomNumber() {
 		Random rand = new Random();
