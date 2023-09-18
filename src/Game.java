@@ -36,6 +36,12 @@ public class Game {
 			break;
 		}
 		System.out.print("Do you want to play again? (yes/no): ");
+		
+		String playAgainInput = scanner.nextLine();
+		playAgain = playAgainInput.equalsIgnoreCase("yes");
+		}
+		System.out.println("Thank you for playing!");
+		scanner.close();
   }
 	public static int getRandomNumber() {
 		Random rand = new Random();
